@@ -1,0 +1,93 @@
+.album-container {
+  width: 400px;
+  height: 400px;
+  float: left;
+  user-select: none;
+}
+
+.preview-photo {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.title {
+  font-size: 12px;
+  font-family: serif;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  max-width: 250px;
+  max-height: 30px;
+  padding: 3px;
+  user-select: text;
+}
+
+.title:hover {
+  cursor: default;
+}
+
+.title {
+  z-index: 2;
+}
+
+p {
+  margin: 0px;
+}
+
+.select {
+  position: absolute;
+  margin: 0px;
+  bottom: 15px;
+  right: 10px;
+}
+
+.album {
+  display: inline-block;
+}
+
+img {
+  vertical-align: top;
+}
+
+.left {
+  position: absolute;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+}
+
+.navigation {
+  color: white;
+  width: 100%;
+  cursor: default;
+}
+
+.navigation-container {
+  position: absolute;
+  height: 100%;
+  width: 45px;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 7px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navigation-container:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+

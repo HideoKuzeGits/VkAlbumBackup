@@ -1,0 +1,18 @@
+<div class="album-container">
+  <div class="album">
+    <div class="image-container">
+      <div class="title">
+        <p>{{album.date * 1000 | date: 'dd.mm.yyyy hh:mm'}}</p>
+        <p mdTooltip="{{album.title}}" #title>{{album.title}}</p>
+      </div>
+      <div (click)="previous()" layout="row" layout-align="center start" class="navigation-container left">
+        <span class="navigation"> < </span>
+      </div>
+      <img class="preview-photo" src="{{album.photos[photoNum]}}" (click)="navigateToAlbum()">
+      <div (click)="next()" layout="row" layout-align="center start" class="navigation-container right">
+        <span class="navigation"> > </span>
+      </div>
+      <input class="select" type="checkbox" (change)= "selected = !selected" />
+    </div>
+  </div>
+</div>
